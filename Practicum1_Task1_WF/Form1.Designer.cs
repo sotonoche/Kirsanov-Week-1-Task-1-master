@@ -35,6 +35,7 @@
             this.ButtonResult = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NumericFirst)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericSecond)).BeginInit();
             this.SuspendLayout();
@@ -120,11 +121,21 @@
             this.textBoxResult.Size = new System.Drawing.Size(105, 20);
             this.textBoxResult.TabIndex = 6;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(238, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Вычисление производится с модулями чисел";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(259, 195);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ButtonResult);
@@ -150,6 +161,7 @@
         private System.Windows.Forms.Button ButtonResult;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.Label label4;
     }
 }
 
