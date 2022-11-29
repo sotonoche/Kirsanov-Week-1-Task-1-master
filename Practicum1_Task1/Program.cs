@@ -19,9 +19,9 @@ namespace Practicum1_Task1
                 try
                 {
                     Console.Write("Введите 1-е число: ");
-                    x = Math.Abs(double.Parse(Console.ReadLine()));
+                    x = double.Parse(Console.ReadLine());
                     Console.Write("Введите 2-е число: ");
-                    y = Math.Abs(double.Parse(Console.ReadLine()));
+                    y = double.Parse(Console.ReadLine());
                     break;
                 }
                 catch
@@ -29,7 +29,13 @@ namespace Practicum1_Task1
                     Console.WriteLine("Введено некорректное значение!");
                 }
             }
-            res = Math.Sqrt(x * y);
+
+            Console.WriteLine();
+            Console.WriteLine($"Модуль числа {x} равен {Math.Abs(x)}");
+            Console.WriteLine($"Модуль числа {y} равен {Math.Abs(y)}");
+            Console.WriteLine();
+
+            res = Math.Sqrt(Math.Abs(x) * Math.Abs(y));
             Console.WriteLine($"Среднее геометрическое модулей двух данных чисел равно {Math.Round(res, 2)}.");
         }
     }
